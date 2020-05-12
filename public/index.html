@@ -8,8 +8,14 @@
     </head>
     <body>
         <div id="app">
-            <h1>Currency Converter</h1>
-            
+            <h1>Eur Currency Conveter</h1>
+            <p>Eur to: {{ eurRates }}</p>
+            <label for="select_currency">Select Currency:</label>
+            <select id="select_currency" v-model="selectedCurrency">
+                <option disabled value="">Select a currency</option>
+                <option v-for="rates in currencies" :value="currency">{{currency.base</option>
+            </select>
         </div>
+
     </body>
 </html>
