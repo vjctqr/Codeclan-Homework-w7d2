@@ -4,9 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
     new Vue({
         el: "#app",
         data: {
-            currencies: [],
-            selectedCurrency: null,
-            base: "EUR"
+            currencies: {
+                base: "EUR",
+                date: "2020-05-12",
+                rates: []
+            },
         },
         computed:{
             eurRates: function() {
